@@ -36,6 +36,7 @@ const ChatFeed=(props)=>{
             <div className="chat-title-container">
                 <div className="chat-title">
                     {chat?.title}
+                    <h1>Hello everyone</h1>
                 </div>
                 <div className="chat-subtitle">
                     {chat.pepole.map((person)=>`${person.person.username}`)}
@@ -45,7 +46,7 @@ const ChatFeed=(props)=>{
               {renderMessages()}  
               <div style={{height:'100px'}}/>
               <div className="message-form-container">
-                <MessageForm {...props} chatId={activeChat}/>
+                <MessageForm {...props} chatId={activeChat} />
                 
               </div>
         </div>
